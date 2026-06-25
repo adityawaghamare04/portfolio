@@ -113,45 +113,6 @@ A developer portfolio is a unique way to showcase projects, research, and profes
 
 ---
 
-## API Routes Description
-
-##### `GET /api/userInfoByIP/[IP-Address]`
-Returns detailed geological data based on the visitor's IP address.
-*   **Example**: `/api/userInfoByIP/159.89.173.104`
-*   **Response**:
-    ```json
-    {
-      "zip": "560002",
-      "country": "India",
-      "countryCode": "IN",
-      "region": "KA",
-      "regionName": "Karnataka",
-      "city": "Bengaluru",
-      "lat": 12.9634,
-      "lon": 77.5855,
-      "timezone": "Asia/Kolkata",
-      "isp": "DigitalOcean, LLC",
-      "org": "Digital Ocean",
-      "query": "159.89.173.104"
-    }
-    ```
-
-##### `GET /api/userInfoByLatLon/[lat]/[lon]`
-Returns the zip code matching specific coordinates using Google Reverse Geocoding.
-*   **Example**: `/api/userInfoByLatLon/12.9634/77.5855`
-*   **Response**:
-    ```json
-    {
-      "zipcode": "560002"
-    }
-    ```
-
-##### `GET /api/typing/[minLength]`
-Returns a random quote with a specific minimum character count for the built-in Speed Typing project.
-*   **Example**: `/api/typing/120`
-
----
-
 ## Color References
 
 | Color          | Hex                                                                |
@@ -178,15 +139,6 @@ furnished to do so, subject to the following conditions:
 
 The above copyright notice and this permission notice shall be included in all
 copies or substantial portions of the Software.
-
-THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
-IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
-FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
-AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
-LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
-OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
-SOFTWARE.
-
 ---
 
 ## Author Info
