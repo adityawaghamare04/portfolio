@@ -5,187 +5,154 @@
   adityawaghamare.in
 </h1>
 <p align="center">
-  The first iteration of <a href="https://www.adityawaghamare.in" target="_blank">adityawaghamare.in</a> built with <a href="https://nextjs.org/" target="_blank">Nextjs</a> and hosted with <a href="https://vercel.com/" target="_blank">Vercel</a>
+  The official portfolio of <strong>Aditya Waghamare</strong> — built with <strong>Next.js</strong>, <strong>TypeScript</strong>, <strong>Tailwind CSS</strong>, and hosted on <strong>Vercel</strong>.
 </p>
 
 <p align="center">
-  <a href="https://my-website-ten-sage.vercel.app/" target="_blank">
+  <a href="https://www.adityawaghamare.in" target="_blank">
     <img src="https://raw.githubusercontent.com/DataDog/integrations-extras/master/vercel/images/logo-full-black.png" width="100" alt="Vercel Status" />
   </a>
 </p>
 
-![demo](https://user-images.githubusercontent.com/62770500/199337431-d632cc3c-12fb-40db-8f96-0d5e55555579.png)
 ---
-## 🚨 About this repo (please read!)
 
-### 🚀 Latest Update
-I can’t believe my portfolio now has over 200 visitors each day! It’s incredibly rewarding to see talented people using my work as inspiration for their own projects. I'm thrilled to contribute to the open-source community and am happy to see my portfolio making an impact!
+## 🚨 About This Repository
 
-You can use this code for your own website, but please with attribution 😊.
+This repository hosts my personal developer portfolio showing my software engineering journey, skills, and projects. 
 
-Please note that the design of the website is inspired from "brittanychiang.com", but didn't copied even a single piece of code from brittanyching repo, However, i built the portfolio from scratch with different technolgoies, like `Tailwind CSS` and `Framer Motion` and i added some other functionalities to it, so it might seems the same, but believe me i did a lot of work the code, website and how it works is entirely different!!!!. If you have questions about implementation, please refer to the [Next.js DOCS](https://nextjs.org/docs) same thing for Tailwind CSS and Framer Motion check out the Documentation, Or you can simply reach to me directly.
-
-
-I'd like to highlight that the `This website can't be reached` trick featured on my portfolio is an `original idea` and not borrowed from any other source. It's intended as a playful element, reflecting my sense of humor. While I acknowledge that it might not be the most user-friendly approach. Through careful observation, I've calculated that the average reaction time is 2 seconds before users realize the playful nature of the message, at which point the content becomes accessible. It's a quirky touch meant to add a lighthearted element to the user experience.
-
-
-
-
+### 🚀 Design Inspiration
+The visual design is inspired by Brittany Chiang's layout, built entirely from scratch with **Next.js**, **Tailwind CSS**, and **Framer Motion**, and featuring an updated premium dark theme with custom orange accents, custom backdrop radial glows, and interactive sections.
 
 ---
+
 ### Table of Contents
 
 - [Description](#description)
-- [How To Use](#how-to-use)
-- [🎨 Color Reference](#references)
+- [Key Features](#key-features)
+- [Technologies & Libraries](#technologies--libraries)
+- [Installation & Set Up](#installation--set-up)
+- [Building & Running for Production](#building--running-for-production)
+- [API Routes Description](#api-routes-description)
+- [🎨 Color References](#color-references)
 - [License](#license)
 - [Author Info](#author-info)
 
 ---
+
 ## Description
 
-Without a doubt a portfolio website is a unique way to showcase your work and let others know about yourself. It’s like an evergreen platform for your projects, case studies, and information about you. However, Why why did i choose Next.js? Because it is a React framework with Server-Side Rendering, which is good for SEO (Good for us if we get found on Google, right?).
-
-Also, Next.js helps us build a full back-end & blazing-fast websites along with benefits such as Image optimization.
-
-Why tailwindcss? Because TailwindCSS is a framework which reduces a lot of styling efforts. It has low level CSS classes that you can directly embed into the HTML code.
+A developer portfolio is a unique way to showcase projects, research, and professional work. I chose **Next.js** for its fast load times, Server-Side Rendering (SSR) capabilities (great for SEO ranking), and optimized image management. **Tailwind CSS** is utilized for clean, modular, and responsive styling.
 
 ---
-## Technologies & libraries
 
-Since i integrated some of my project into my website i'll i mention most of technologies & libraries that i used.
+## Key Features
 
-- Next.js
-- Nodejs
-- TypeScript
-- Tailwind CSS
-- framer-motion
-- Google API
-- cookie-cutter
-- react-leaflet
-- Vercel Analytics
-- Google Analytics
+1. **Intelligent Design**: Modern dark theme with custom orange accents and dynamic background radial gradients.
+2. **Interactive Sections**: Fully responsive tabs for work history (Freelance, PCCOER studies, Hackathons history).
+3. **Playful Interstellar Loaders**: Features a custom-built, playful "This Site Can't Be Reached" loading component that simulates a local connection check before animating in.
+4. **Rich Integrations**: Bundled sub-projects like a speed typing challenge, API integrations, and customized IP lookup routes.
 
-##### Note : 
-##### You can find the rest of packages in the file ```/package.json```
 ---
 
-### How To Use
+## Technologies & Libraries
 
-Yes, you can fork this repo. Please give me proper credit by linking back to [adityawaghamare.in](https://www.adityawaghamare.in). Thanks!
+- **Framework**: Next.js & React
+- **Logic**: TypeScript
+- **Styling**: Tailwind CSS & Vanilla CSS
+- **Animations**: Framer Motion & AOS (Animate On Scroll)
+- **APIs & Analytics**: Google Analytics, Vercel Analytics, Leaflet maps, and Custom API endpoints
 
-## 🛠 Installation & Set Up
+---
 
-1. Clone the repo CLI
+### Installation & Set Up
 
+1. **Clone the repository**:
    ```sh
    git clone https://github.com/adityawaghamare04/portfolio.git
    ```
 
-2. Install and use the correct version of Node using [NVM](https://github.com/nvm-sh/nvm)
-
+2. **Use the correct version of Node** (via NVM):
    ```sh
    nvm install
    ```
 
-3. Install dependencies
-
+3. **Install dependencies**:
    ```sh
-   yarn
+   yarn install
    ```
    
-4. (OPTIONAL) : Add .env file to the root project 
- 
-```bash
-    touch .env
-```
+4. **Create a local environment file** (Optional):
+   ```bash
+   touch .env.local
+   ```
 
-5.  (OPTIONAL) : Add your Google API key inside .env file.
+5. **Configure your API keys**:
+   Add your Google API keys inside `.env.local`:
+   ```env
+   NEXT_PUBLIC_KEY_GOOGLE_API="your_google_api_key"
+   ```
 
-###### ***Note :***
-###### not Adding Google API to the project will cause not returning the correct zip code, it might be always "00000"
-###### make sure you enabled Geolocation to this API
-
-```Javascript
-    NEXT_PUBLIC_KEY_GOOGLE_API="your API key"
-```
-
-6. Start the development server
-
+6. **Start the development server**:
    ```sh
    yarn dev
    ```
 
-## 🚀 Building and Running for Production
+---
 
-1. Generate a full static production build
+## Building & Running for Production
 
+1. **Generate a production build**:
    ```sh
    yarn build
    ```
 
-1. Preview the site as it will appear once deployed
-
+2. **Preview the production build**:
    ```sh
-   yarn run serve
+   yarn start
    ```
----
-## API Description :
-##### Endpoint 1 :
-the following endpoint will return a json object contains a bunch of information about the ip address  
 
-```api
-    /api/userInfoByIP/[IP-Address]
-```
-example :
-
-```api
-    /api/userInfoByIP/159.89.173.104
-```
-###### ***Get Request to above endpoint will return the following json data :***
-```JavaScript
-    {"zip":"560002","country":"India","countryCode":"IN","region":"KA","regionName":"Karnataka","city":"Bengaluru","datetime":"9/6/2022, 1:24:30 AM","lat":12.9634,"lon":77.5855,"timezone":"Asia/Kolkata","isp":"DigitalOcean, LLC","org":"Digital Ocean","as":"AS14061 DigitalOcean, LLC","query":"159.89.173.104"}
-```
-
-##### Endpoint 2 :
-the following endpoint will return a json object contains the zip code for the latitude and logitude
-
-```api
-    "/api/userInfoByLatLon/" + lat + "/" + lon
-```
-example :
-
-```api
-    /api/userInfoByIP/159.89.173.104
-```
-###### ***Get Request to above endpoint will return the zipcode of the lat and long provided :***
-```JavaScript
-    {"zipcode" : "56998"}
-```
-###### ***the Response below is returned if the lat and long provided has no zip code in Google maps, like lat & long in positioned in the ocean :***
-```JavaScript
-    {"zipcode" : "00000"}
-```
-
-##### Endpoint 3 :
-the following endpoint will return a json object contains "quote" and "author", for SpeedTyping project i displayed only the quote, **minLength** is considered as the minimum of characters.  
-
-```api
-    /api/typing/[minLength]
-```
-##### notes : 
-- ***minLength*** should be between 10 - 300.
-- the returned quote is a chain of 
-- i costumized the original Endpoint using The API Route of Nextjs, here is the Original Endpoint.
-
-##### Original Endpiont :
-###### URL : 
-```api
-    https://api.quotable.io/random?minLength=[minLength]
-```
 ---
 
-## References
+## API Routes Description
+
+##### `GET /api/userInfoByIP/[IP-Address]`
+Returns detailed geological data based on the visitor's IP address.
+*   **Example**: `/api/userInfoByIP/159.89.173.104`
+*   **Response**:
+    ```json
+    {
+      "zip": "560002",
+      "country": "India",
+      "countryCode": "IN",
+      "region": "KA",
+      "regionName": "Karnataka",
+      "city": "Bengaluru",
+      "lat": 12.9634,
+      "lon": 77.5855,
+      "timezone": "Asia/Kolkata",
+      "isp": "DigitalOcean, LLC",
+      "org": "Digital Ocean",
+      "query": "159.89.173.104"
+    }
+    ```
+
+##### `GET /api/userInfoByLatLon/[lat]/[lon]`
+Returns the zip code matching specific coordinates using Google Reverse Geocoding.
+*   **Example**: `/api/userInfoByLatLon/12.9634/77.5855`
+*   **Response**:
+    ```json
+    {
+      "zipcode": "560002"
+    }
+    ```
+
+##### `GET /api/typing/[minLength]`
+Returns a random quote with a specific minimum character count for the built-in Speed Typing project.
+*   **Example**: `/api/typing/120`
+
+---
+
+## Color References
 
 | Color          | Hex                                                                |
 | -------------- | ------------------------------------------------------------------ |
@@ -200,7 +167,7 @@ the following endpoint will return a json object contains "quote" and "author", 
 ## License
 
 MIT License
- [Aditya Waghamare]
+Copyright (c) 2026 Aditya Waghamare
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal
@@ -219,12 +186,13 @@ AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
 LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
+
 ---
 
 ## Author Info
 
-- Linkedin - [@aditya-waghamare](https://www.linkedin.com/in/aditya-waghamare-707595257/)
-- Website - [Aditya Waghamare](https://www.adityawaghamare.in)
+*   **Website**: [adityawaghamare.in](https://www.adityawaghamare.in)
+*   **LinkedIn**: [Aditya Waghamare](https://www.linkedin.com/in/aditya-waghamare-707595257/)
+*   **GitHub**: [@adityawaghamare04](https://github.com/adityawaghamare04)
 
-[Back To The Top](#description) :
-
+[Back To The Top](#description)
