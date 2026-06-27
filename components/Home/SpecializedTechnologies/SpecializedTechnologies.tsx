@@ -49,9 +49,9 @@ const iconMap: { [key: string]: string } = {
   "Solidity": "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/solidity/solidity-original.svg",
   "Remix IDE": "https://cdn.simpleicons.org/remix/667DFF",
   "Ethereum": "https://cdn.simpleicons.org/ethereum/3C3C3D",
-  "Hardhat": "https://cdn.simpleicons.org/hardhat/FFF",
-  "Foundry": "https://cdn.simpleicons.org/foundry/white",
-  "Metamask": "https://cdn.simpleicons.org/metamask/E17639",
+  "Hardhat": "/Hardhat.png",
+  "Foundry": "/foundry.png",
+  "Metamask": "/metamask.png",
   "Solana": "https://cdn.simpleicons.org/solana/9945FF",
   "IPFS": "https://cdn.simpleicons.org/ipfs/65C294",
 
